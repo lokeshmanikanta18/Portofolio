@@ -1,0 +1,157 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --seasalt: #F0F5F9;
+    --tradewinds: #5F8FA3;
+    --deepsea: #234E70;
+    --midnight-blue: #173759;
+    --cobalt: #0B2545;
+    --antique-white: #FAEBD7;
+    --section-bg: #F7F9FC; /* Lighter background for sections */
+    --name-color: #1A374D; /* Name color */
+    --side-heading-color: #1A374D; /* Color for side headings */
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--seasalt);
+    color: var(--deepsea);
+    transition: background-color 0.4s ease;
+}
+
+/* Header */
+header {
+    background-color: var(--midnight-blue);
+    color: var(--antique-white);
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: var(--cobalt);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--antique-white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--seasalt);
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px; /* Padding for space at the top */
+    max-width: 800px; /* Max width for the sections */
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--section-bg);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+}
+
+/* Headings */
+h2 {
+    color: var(--name-color); /* Section names color */
+    font-family: 'Tradewinds', cursive;
+    margin-bottom: 20px;
+    font-size: 1.8rem; /* Font size for headings */
+}
+
+/* Unordered Lists */
+ul {
+    list-style: none;
+    margin-top: 20px;
+    color: var(--midnight-blue);
+    font-size: 1.1rem; /* Font size */
+    text-align: left;
+    line-height: 1.6;
+    padding-left: 20px;
+    max-width: 100%;
+    overflow-wrap: break-word; /* Ensures words break correctly */
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+ul li strong {
+    color: var(--side-heading-color); /* Color for side headings */
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 180px; /* Adjust width */
+    height: 180px; /* Adjust height */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Use cover to fill the container */
+    object-position: center top; /* Center the image */
+    border: 5px solid var(--deepsea); /* Border color */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.profile-photo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    border-color: var(--cobalt); /* Change border color on hover */
+}
+
+/* Contact Links */
+a {
+    color: var(--tradewinds);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--deepsea);
+}
+
+/* Footer */
+footer {
+    background-color: var(--midnight-blue);
+    color: var(--antique-white);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: var(--deepsea);
+}
+
+/* Hobbies Section */
+#hobbies {
+    text-align: center;
+}
